@@ -18,9 +18,10 @@ import cloud_services_management from '../public/cloud_services_management.png';
 import devops_practices from '../public/devops_practices.png';
 import technology_consulting from '../public/technology_consulting.png';
 import our_services_section_bg from '../public/our_service_section_bg.png';
-import greyStar from '../public/greyStar.png';
-import goldStar from '../public/goldStar.png';
 import quoteIcon from '../public/quote.png';
+import Ellipse from '../public/Ellipse.png';
+import homePerson from '../public/home_person.png';
+
 
 const products = [
   {
@@ -305,6 +306,20 @@ export default function Home() {
 
             <button className='hover-wider bg-[#FFC000] ml-[-17px] py-[15px] lg:py-[18px] px-[20px] lg:px-[25px] rounded-[10px] text-[16px] lg:text-[31px] text-[#0A0A0A] font-weight-700'>Subscribe</button>
           </form>
+      </section>
+
+
+      <section className="">
+        <div className="">
+          <h3>Book a Consultation</h3>
+          <p className="">Let's chat! Our consultation is a no-pressure opportunity to discuss your specific needs and see if we're the right fit to help you reach your full potential.</p>
+          <button className='hover-wider bg-[#FFC000] ml-[-17px] py-[15px] lg:py-[18px] px-[20px] lg:px-[25px] rounded-[10px] text-[16px] lg:text-[31px] text-[#0A0A0A] font-weight-700'>Lets’s Talk</button>
+        </div>
+
+        <div className="">
+          <Image src={Ellipse} />
+          <Image src={homePerson} />
+        </div>
       </section>
     </main>
     <Footer />
