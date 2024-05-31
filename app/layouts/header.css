@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* .header-active {
+    @apply text-[#065CBA]; 
+    
+    @media (min-width: 768px) { 
+      @apply text-[#065CBA] border-b border-[#FFC000]; 
+    }
+    
+    @media (min-width: 1024px) { 
+      @apply border-b-2; 
+    }
+} */
