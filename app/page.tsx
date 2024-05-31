@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Header from "./layouts/header";
+
+import Footer from "./layouts/footer";
 import ButtonComponent from "./components/Button";
 import './home.css'
 import Link from "next/link";
@@ -183,7 +185,7 @@ export default function Home() {
         <div className="first_section_product hidden lg:flex flex-col p-[15px] border-2px
          border border-[#D4D4D4] border-solid border-opacity-50 rounded-[34px]">
           {products.map(product => (
-            <Link className="first_section_product_list flex text-[20px] text-[#fff] font-bold 
+            <Link className="first_section_product_list flex text-[20px] text-[#fff] font-normal 
             px-[25px] py-[5px] w-[427px] my-[10px] justify-between items-center border-2px border 
             border-[#D4D4D4] border-solid border-opacity-50 rounded-[34px]" 
             key={product.id} href={product.link}>
@@ -293,17 +295,19 @@ export default function Home() {
           </div>
       </section>
 
-      <section className="newsletter_section bg-[#fff] pt-[60px]  ">
-        <h3 className="text-[#373737] w-[40%] mx-auto text-center text-[20px] font-bold">Subscribe to our Newsletter</h3>
-        <p className="text-[#373737] text-[12px] text-center mx-auto mt-[20px] w-[60%] font-normal">Get insightful tips, expert advice, and inspiring content to help you reach your goals. 
+      <section className="newsletter_section bg-[#fff] pt-[90px]  ">
+        <h3 className="text-[#373737] w-[40% lg:w-[60%] mx-auto text-center text-[20px] md:text-[36px] lg:text-[47px] font-bold">Subscribe to our Newsletter</h3>
+        <p className="text-[#373737] text-[12px] lg:text-[17px] text-center mx-auto mt-[20px] w-[80%] lg:w-[52%] font-normal">Get insightful tips, expert advice, and inspiring content to help you reach your goals. 
         Stay up-to-date on the hottest trends and industry news.</p>
 
-        <form className="mt-8 mx-auto  flex flex-row items-center justify-items-center">
-          <input className="border-[1px] w-[60%] px-10 py-[16px] rounded-[20px] border-[#D9D9D9] text-[#D3D2D2] text-[15px] font-normal" placeholder="Type your email" type="text" />
-          <button className='hover-wider bg-[#FFC000] ml-[-17px] py-[18px] px-[25px] rounded-[10px] text-[16px] text-[#0A0A0A] font-weight-700'>Subscribe</button>
-        </form>
+        <form className="mt-8 flex justify-center items-center">
+            <input className="border-[1px] outline-none w-[250px] lg:w-[700px] lg:w- px-10 py-[15px] lg:py-[28px] rounded-[10px] border-[#D9D9D9] text-[#D3D2D2] text-[15px] font-normal" placeholder="Type your email" type="text" />
+
+            <button className='hover-wider bg-[#FFC000] ml-[-17px] py-[15px] lg:py-[18px] px-[20px] lg:px-[25px] rounded-[10px] text-[16px] lg:text-[31px] text-[#0A0A0A] font-weight-700'>Subscribe</button>
+          </form>
       </section>
     </main>
+    <Footer />
     </>
   );
 }
