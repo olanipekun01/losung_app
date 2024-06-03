@@ -296,7 +296,7 @@ export default function Home() {
           </div>
       </section>
 
-      <section className="newsletter_section bg-[#fff] pt-[90px]  ">
+      <section className="newsletter_section bg-[#fff] py-[90px]  ">
         <h3 className="text-[#373737] w-[40% lg:w-[60%] mx-auto text-center text-[20px] md:text-[36px] lg:text-[47px] font-bold">Subscribe to our Newsletter</h3>
         <p className="text-[#373737] text-[12px] lg:text-[17px] text-center mx-auto mt-[20px] w-[80%] lg:w-[52%] font-normal">Get insightful tips, expert advice, and inspiring content to help you reach your goals. 
         Stay up-to-date on the hottest trends and industry news.</p>
@@ -309,16 +309,15 @@ export default function Home() {
       </section>
 
 
-      <section className="">
-        <div className="">
-          <h3>Book a Consultation</h3>
-          <p className="">Let's chat! Our consultation is a no-pressure opportunity to discuss your specific needs and see if we're the right fit to help you reach your full potential.</p>
-          <button className='hover-wider bg-[#FFC000] ml-[-17px] py-[15px] lg:py-[18px] px-[20px] lg:px-[25px] rounded-[10px] text-[16px] lg:text-[31px] text-[#0A0A0A] font-weight-700'>Lets’s Talk</button>
+      <section className="book_consultation_section bg-[#EAF2FA] p-[20px] flex items-center justify-between relative">
+        <div className="book_consultation_left_div w-[50%] ">
+            <h3 className="text-[20px] font-bold line-height-[19px]">Book a Consultation</h3>
+          <p className="text-[12px] mt-[10px]">Let's chat! Our consultation is a no-pressure opportunity to discuss your specific needs and see if we're the right fit to help you reach your full potential.</p>
+          <button className='hover-wider bg-[#FFC000] py-[7px] mt-[15px] lg:py-[18px] px-[20px] lg:px-[25px] rounded-[10px] text-[15px] lg:text-[31px] text-[#0A0A0A] font-weight-700'>Lets’s Talk</button>
         </div>
 
         <div className="">
-          <Image src={Ellipse} />
-          <Image src={homePerson} />
+          <Image className="mb-[-20px] " src={homePerson} />
         </div>
       </section>
     </main>

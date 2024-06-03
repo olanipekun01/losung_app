@@ -49,6 +49,15 @@
     transform: skewY(-10deg);
 }
 
+
+.book_consultation_section .book_consultation_left_div h3{
+    line-height: 19px;
+}
+
+.book_consultation_section .book_consultation_left_div p {
+    line-height: 12px;
+}
+
 @media (min-width:1024px) {
     .first_section {
         width: 100%;
