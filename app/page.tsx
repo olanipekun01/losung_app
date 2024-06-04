@@ -171,7 +171,6 @@ export default function Home() {
   
   return (
     <>
-    <Header />
     <main className="">
       <section className="first_section w-[100%] flex items-center justify-between lg:px-5 xl:px-[90px]">
         <div className="px-[30px] md:px-[120px] lg:px-0 flex flex-col items-center  lg:items-start lg:w-[519px]">
@@ -184,10 +183,10 @@ export default function Home() {
         </div>
 
         <div className="first_section_product hidden lg:flex flex-col p-[15px] border-2px
-         border border-[#D4D4D4] border-solid border-opacity-50 rounded-[34px]">
+          border-[#D4D4D4] border-solid border-opacity-50 rounded-[34px]">
           {products.map(product => (
             <Link className="first_section_product_list flex text-[20px] text-[#fff] font-normal 
-            px-[25px] py-[5px] w-[427px] my-[10px] justify-between items-center border-2px border 
+            px-[25px] py-[5px] w-[427px] my-[5px] justify-between items-center border-2px border 
             border-[#D4D4D4] border-solid border-opacity-50 rounded-[34px]" 
             key={product.id} href={product.link}>
               <span>{product.name}</span>
@@ -309,19 +308,18 @@ export default function Home() {
       </section>
 
 
-      <section className="book_consultation_section bg-[#EAF2FA] p-[20px] flex items-center justify-between relative">
+      <section className="book_consultation_section bg-[#EAF2FA] p-[20px] md:px-[50px] lg:h-[382px] lg:mt-[80px] flex items-center justify-between relative">
         <div className="book_consultation_left_div w-[50%] ">
-            <h3 className="text-[20px] font-bold line-height-[19px]">Book a Consultation</h3>
-          <p className="text-[12px] mt-[10px]">Let's chat! Our consultation is a no-pressure opportunity to discuss your specific needs and see if we're the right fit to help you reach your full potential.</p>
+            <h3 className="text-[20px] lg:text-[45px] font-bold line-height-[19px]">Book a Consultation</h3>
+          <p className="text-[12px] lg:text-[17px] mt-[10px]">Let's chat! Our consultation is a no-pressure opportunity to discuss your specific needs and see if we're the right fit to help you reach your full potential.</p>
           <button className='hover-wider bg-[#FFC000] py-[7px] mt-[15px] lg:py-[18px] px-[20px] lg:px-[25px] rounded-[10px] text-[15px] lg:text-[31px] text-[#0A0A0A] font-weight-700'>Lets’s Talk</button>
         </div>
 
         <div className="">
-          <Image className="mb-[-20px] " src={homePerson} />
+          <Image className="mb-[-20px] lg:mb-[150px]  lg:w-[564px] lg:h-[533px]" src={homePerson} />
         </div>
       </section>
     </main>
-    <Footer />
     </>
   );
 }

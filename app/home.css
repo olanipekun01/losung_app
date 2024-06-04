@@ -62,6 +62,14 @@
     .first_section {
         width: 100%;
         background-position: center center;
-        height: 90vh;
+        height: 100vh;
+    }
+
+    .book_consultation_section .book_consultation_left_div h3{
+        line-height: 44px;
+    }
+    
+    .book_consultation_section .book_consultation_left_div p {
+        line-height: 25px;
     }
 }
